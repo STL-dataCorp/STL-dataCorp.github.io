@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO_GEUTUI_LOIC</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Lien Font Awesome pour icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#stack-technique">stack-technique</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Ajoutez ceci dans votre navigation ou en haut de page -->
+        <div class="theme-toggle">
+            <input type="checkbox" id="darkmode-toggle" class="toggle-checkbox">
+            <label for="darkmode-toggle" class="toggle-label">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+                <span class="toggle-ball"></span>
+            </label>
+        </div>
+    </nav>
+
+<!-- Section Hero -->
+<section id="accueil" class="hero">
+    <!-- Image de fond -->
+    <div class="hero-bg">
+        <!--<img src="assets/images/hero-bg.jpg" alt="Background IA & Big Data">-->
+        <img src="assets/images/AI2.jpg" alt="">
+        <!-- <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); width: 100%; height: 100%;"></div> -->
+    </div>
+    
+    <!-- Overlay pour lisibilité -->
+    <div class="hero-overlay"></div>
+    
+    <!-- Contenu principal -->
+    <div class="hero-content">
+        <!-- Logo / Nom -->
+        <div class="hero-logo">
+            <h1>GEUTUI TCHEUTOU SAINT LOIC</h1>
+        </div>
+        
+        <!-- Titre principal -->
+        <h1 class="hero-title">
+            Étudiant en <span class="highlight">Master 2 IA & Big Data</span>
+        </h1>
+        
+        <!-- Sous-titre -->
+        <p class="hero-subtitle">
+            Passionné par le Machine Learning, la Data Science et le Développement de solutions Big Data.
+            Je transforme les données en insights actionnables grâce à des modèles prédictifs innovants.
+        </p>
+        
+        <!-- Boutons d'action -->
+        <div class="hero-buttons">
+            <a href="#projets" class="btn-primary">
+                <i class="fas fa-rocket"></i>
+                Voir mes projets
+            </a>
+            <a href="#contact" class="btn-secondary">
+                <i class="fas fa-envelope"></i>
+                Me contacter
+            </a>
+        </div>
+        
+        <!-- Statistiques -->
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Projets réalisés</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">15+</span>
+                <span class="stat-label">Technologies maîtrisées</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">2</span>
+                <span class="stat-label">Ans d'expérience</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">5</span>
+                <span class="stat-label">Certifications</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Indicateur de scroll -->
+    <div class="scroll-indicator">
+        <div class="scroll-down" onclick="document.querySelector('#projets').scrollIntoView({behavior: 'smooth'})"></div>
+    </div>
+</section>
+
+
+<!-- Section À propos -->
+<section id="about" class="about-section"> 
+    <div class="about-container">
+        <!-- Photo de profil -->
+        <div class="profile-image-container">
+            <img src="assets/images/img2.jpeg" alt="[Votre Nom] - Étudiant en IA & Big Data" class="profile-img">
+            <div class="profile-badge">
+                <i class="fas fa-graduation-cap"></i>
+                Master 2 IA & Big Data
+            </div>
+        </div>
+        
+        <!-- Contenu texte -->
+        <div class="about-content">
+            <h2>À Propos de Moi</h2>
+            
+            <p>
+                Passionné par l'Intelligence Artificielle et le Big Data, je suis actuellement en Master 2 
+                spécialisé dans ces domaines. Mon objectif est de développer des solutions innovantes 
+                qui transforment les données en insights actionnables.
+            </p>
+            
+            <div class="about-highlight">
+                <h3><i class="fas fa-bullseye"></i> Mon Objectif</h3>
+                <p>
+                    Devenir Data Scientist/Ingénieur ML spécialisé dans la conception de modèles prédictifs 
+                    et la mise en place de pipelines de données à grande échelle. Je m'intéresse particulièrement 
+                    au Machine Learning, au Deep Learning et aux architectures Big Data.
+                </p>
+            </div>
+            
+            <!-- Statistiques -->
+            <div class="about-stats">
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Projets réalisés</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Technologies maîtrisées</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">Années d'expérience</span>
+                </div>
+            </div>
+            
+            <!-- Points clés -->
+            <div class="about-highlight">
+                <h3><i class="fas fa-star"></i> Points Forts</h3>
+                <p>
+                    • Développement de modèles de Machine Learning<br>
+                    • Traitement de données à grande échelle<br>
+                    • Visualisation de données avancée<br>
+                    • Architecture de pipelines de données
+                </p>
+            </div>
+            
+            <!-- Boutons d'action -->
+            <div class="about-actions">
+                <a href="assets/pdf/CV-GEUTUI_LOIC.pdf" class="btn-cv" download>
+                    <i class="fas fa-download"></i>
+                    Télécharger mon CV
+                </a>
+                <a href="#contact" class="btn-contact">
+                    <i class="fas fa-envelope"></i>
+                    Me contacter
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Section Parcours Académique -->
+<section id="parcours" class="timeline-section">
+    <div class="timeline-container">
+        <!-- En-tête -->
+        <div class="timeline-header">
+            <h2>🎓 Parcours Académique</h2>
+            <p>Mon parcours éducatif et les compétences acquises à chaque étape</p>
+        </div>
+        
+        <!-- Timeline -->
+        <div class="timeline">
+            <!-- Item 1 : Master 2 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <!-- Header avec logo université -->
+                    <div class="timeline-header-content">
+                        <div class="university-logo">
+                            <!-- Remplacez avec le logo de votre université -->
+                            <img src="assets/images/logo.jpg" alt="Logo Université Master">
+                            <!-- Alternative : Initiales si pas de logo -->
+                            <!-- <span style="font-size: 1.5rem; font-weight: bold; color: #667eea;">UM</span> -->
+                        </div>
+                        <div class="timeline-title">
+                            <h3>KEYCE Informatique & IA</h3>
+                            <div class="degree">Master 2 en Intelligence Artificielle & Big Data</div>
+                            <span class="period">2025 - 2026</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Détails de la formation -->
+                    <div class="timeline-details">
+                        <h4><i class="fas fa-graduation-cap"></i> Spécialisation</h4>
+                        <ul class="details-list">
+                            <li><i class="fas fa-check-circle"></i> Machine Learning & Deep Learning avancé</li>
+                            <li><i class="fas fa-check-circle"></i> Traitement Big Data avec Apache Spark</li>
+                            <li><i class="fas fa-check-circle"></i> Data Mining et analyse prédictive</li>
+                            <li><i class="fas fa-check-circle"></i> Architectures de données distribuées</li>
+                        </ul>
+                        
+                        <h4><i class="fas fa-trophy"></i> Projets réalisés</h4>
+                        <ul class="details-list">
+                            <li><i class="fas fa-star"></i> Classification d'images avec CNN</li>
+                            <li><i class="fas fa-star"></i> Système de recommandation</li>
+                            <li><i class="fas fa-star"></i> Pipeline ETL Big Data</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Compétences acquises -->
+                    <div class="skills-badges">
+                        <span class="skill-badge">TensorFlow</span>
+                        <span class="skill-badge">PySpark</span>
+                        <span class="skill-badge">Data Mining</span>
+                        <span class="skill-badge">MLOps</span>
+                        <span class="skill-badge">Cloud Computing</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Item 2 : Master 1 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-header-content">
+                        <div class="university-logo">
+                            <img src="assets/images/logo.jpg" alt="Logo Université Master 1">
+                        </div>
+                        <div class="timeline-title">
+                            <h3>KEYCE Informatique & IA</h3>
+                            <div class="degree">Master 1 en Science des Données</div>
+                            <span class="period">2024 - 2025</span>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-details">
+                        <h4><i class="fas fa-graduation-cap"></i> Fondements acquis</h4>
+                        <ul class="details-list">
+                            <li><i class="fas fa-check-circle"></i> Statistiques pour la Data Science</li>
+                            <li><i class="fas fa-check-circle"></i> Algorithmes de Machine Learning</li>
+                            <li><i class="fas fa-check-circle"></i> Bases de données avancées</li>
+                            <li><i class="fas fa-check-circle"></i> Visualisation de données</li>
+                        </ul>
+                        
+                        <h4><i class="fas fa-trophy"></i> Réalisations</h4>
+                        <ul class="details-list">
+                            <li><i class="fas fa-star"></i> Analyse prédictive de séries temporelles</li>
+                            <li><i class="fas fa-star"></i> Dashboard interactif de visualisation</li>
+                            <li><i class="fas fa-star"></i> Modèle de clustering</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skills-badges">
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">R</span>
+                        <span class="skill-badge">SQL Avancé</span>
+                        <span class="skill-badge">Tableau</span>
+                        <span class="skill-badge">Scikit-learn</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Item 3 : Licence -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-header-content">
+                        <div class="university-logo">
+                            <img src="assets/images/UD.jpg" alt="Logo Université Licence">
+                        </div>
+                        <div class="timeline-title">
+                            <h3>Université de DOUALA</h3>
+                            <div class="degree">Licence en Informatique</div>
+                            <span class="period">2019 - 2023</span>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-details">
+                        <h4><i class="fas fa-graduation-cap"></i> Fondamentaux</h4>
+                        <ul class="details-list">
+                            <li><i class="fas fa-check-circle"></i> Algorithmique et programmation</li>
+                            <li><i class="fas fa-check-circle"></i> Bases de données relationnelles</li>
+                            <li><i class="fas fa-check-circle"></i> Mathématiques pour l'informatique</li>
+                            <li><i class="fas fa-check-circle"></i> Architecture des systèmes</li>
+                        </ul>
+                        
+                        <h4><i class="fas fa-trophy"></i> Projets notables</h4>
+                        <ul class="details-list">
+                            <li><i class="fas fa-star"></i> Application de gestion de bibliothèque</li>
+                            <li><i class="fas fa-star"></i> Site web e-commerce</li>
+                            <li><i class="fas fa-star"></i> Système de gestion de bases de données</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skills-badges">
+                        <span class="skill-badge">Java</span>
+                        <span class="skill-badge">C++</span>
+                        <span class="skill-badge">MySQL</span>
+                        <span class="skill-badge">Web Development</span>
+                        <span class="skill-badge">Git</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Item 4 : Baccalauréat (Optionnel) -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-header-content">
+                        <div class="university-logo">
+                            <img src="assets/images/logos/lycee.png" alt="Logo Lycée">
+                        </div>
+                        <div class="timeline-title">
+                            <h3>Lycée [Nom de ton lycée]</h3>
+                            <div class="degree">Baccalauréat Scientifique</div>
+                            <span class="period">2016 - 2019</span>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-details">
+                        <h4><i class="fas fa-graduation-cap"></i> Spécialité</h4>
+                        <ul class="details-list">
+                            <li><i class="fas fa-check-circle"></i> Mathématiques</li>
+                            <li><i class="fas fa-check-circle"></i> Physique-Chimie</li>
+                            <li><i class="fas fa-check-circle"></i> Sciences de l'Ingénieur</li>
+                            <li><i class="fas fa-check-circle"></i> Mention Très Bien</li>
+                        </ul>
+                        
+                        <h4><i class="fas fa-trophy"></i> Orientation</h4>
+                        <ul class="details-list">
+                            <li><i class="fas fa-star"></i> Découverte de la programmation</li>
+                            <li><i class="fas fa-star"></i> Participation aux Olympiades de Mathématiques</li>
+                            <li><i class="fas fa-star"></i> Projet de robotique</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skills-badges">
+                        <span class="skill-badge">Logique</span>
+                        <span class="skill-badge">Algorithmique</span>
+                        <span class="skill-badge">Mathématiques</span>
+                        <span class="skill-badge">Sciences</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+   <!-- Section Projets -->
+<section id="projets" class="projects-section">
+    <div class="projects-container">
+        <!-- En-tête -->
+        <div class="projects-header">
+            <h2> Mes Projets</h2>
+            <p>Découvrez mes réalisations en Intelligence Artificielle, Big Data et Data Science</p>
+        </div>
+        
+        <!-- Filtres par catégorie -->
+        <div class="projects-filters">
+            <button class="filter-btn active" data-filter="all">
+                <i class="fas fa-layer-group"></i>
+                Tous les projets
+            </button>
+            <button class="filter-btn" data-filter="machine-learning">
+                <i class="fas fa-brain"></i>
+                Machine Learning
+            </button>
+            <button class="filter-btn" data-filter="big-data">
+                <i class="fas fa-database"></i>
+                Big Data
+            </button>
+            <button class="filter-btn" data-filter="data-science">
+                <i class="fas fa-chart-line"></i>
+                Data Science
+            </button>
+            <button class="filter-btn" data-filter="web-app">
+                <i class="fas fa-laptop-code"></i>
+                Applications Web
+            </button>
+        </div>
+        
+        <!-- Grille de projets -->
+        <div class="projects-grid">
+            <!-- Projet 1 : Classification d'images -->
+            <div class="project-card" data-category="machine-learning">
+                <div class="project-image">
+                    <img src="assets/images/projets/classification-medicale.jpg" alt="Classification d'images médicales">
+                    <div class="project-overlay">
+                        <a href="#projet-details-1" class="view-project">
+                            <i class="fas fa-eye"></i>
+                            Voir le projet
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <span class="project-category">Machine Learning</span>
+                    <h3 class="project-title">Classification d'Images Médicales</h3>
+                    <p class="project-description">
+                        Développement d'un modèle CNN (ResNet-50) pour la classification d'images de radiographies pulmonaires.
+                        Précision de 94% sur l'ensemble de test avec optimisation des hyperparamètres.
+                    </p>
+                    <div class="project-technologies">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Keras</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/votreprofil/projet-classification" class="project-link github-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Code source
+                        </a>
+                        <a href="#projet-details-1" class="project-link demo-link">
+                            <i class="fas fa-play-circle"></i>
+                            Voir démo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projet 2 : Analyse Big Data -->
+            <div class="project-card" data-category="big-data">
+                <div class="project-image">
+                    <img src="assets/images/dashboard.png" alt="Pipeline Big Data">
+                    <div class="project-overlay">
+                        <a href="#projet-details-2" class="view-project">
+                            <i class="fas fa-eye"></i>
+                            Voir le projet
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <span class="project-category">Big Data</span>
+                    <h3 class="project-title">Pipeline ETL avec Apache Spark</h3>
+                    <p class="project-description">
+                        Conception d'un pipeline de données scalable pour traiter 10+ To de données de transactions.
+                        Optimisation des performances avec partitionnement et caching stratégique.
+                    </p>
+                    <div class="project-technologies">
+                        <span class="tech-tag">Apache Spark</span>
+                        <span class="tech-tag">PySpark</span>
+                        <span class="tech-tag">Hadoop</span>
+                        <span class="tech-tag">Airflow</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/votreprofil/projet-bigdata" class="project-link github-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Code source
+                        </a>
+                        <a href="#projet-details-2" class="project-link demo-link">
+                            <i class="fas fa-chart-bar"></i>
+                            Dashboard
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projet 3 : Prédiction de séries temporelles -->
+            <div class="project-card" data-category="data-science">
+                <div class="project-image">
+                    <img src="assets/images/projets/time-series.jpg" alt="Prédiction de séries temporelles">
+                    <div class="project-overlay">
+                        <a href="#projet-details-3" class="view-project">
+                            <i class="fas fa-eye"></i>
+                            Voir le projet
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <span class="project-category">Data Science</span>
+                    <h3 class="project-title">Prédiction de Séries Temporelles</h3>
+                    <p class="project-description">
+                        Modèle LSTM pour la prévision de la demande énergétique. Réduction de l'erreur de prédiction de 30%
+                        par rapport aux méthodes traditionnelles avec feature engineering avancé.
+                    </p>
+                    <div class="project-technologies">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Prophet</span>
+                        <span class="tech-tag">Plotly</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/votreprofil/projet-timeseries" class="project-link github-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Code source
+                        </a>
+                        <a href="#projet-details-3" class="project-link demo-link">
+                            <i class="fas fa-chart-line"></i>
+                            Visualisation
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projet 4 : Chatbot IA -->
+            <div class="project-card" data-category="machine-learning">
+                <div class="project-image">
+                    <img src="assets/images/projets/chatbot-ia.jpg" alt="Chatbot IA">
+                    <div class="project-overlay">
+                        <a href="#projet-details-4" class="view-project">
+                            <i class="fas fa-eye"></i>
+                            Voir le projet
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <span class="project-category">Machine Learning</span>
+                    <h3 class="project-title">Chatbot IA pour Support Client</h3>
+                    <p class="project-description">
+                        Chatbot basé sur Transformer (BERT) pour le support client automatique. Traitement du langage naturel
+                        avec intention recognition et réponse contextuelle.
+                    </p>
+                    <div class="project-technologies">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Transformers</span>
+                        <span class="tech-tag">NLTK</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/votreprofil/projet-chatbot" class="project-link github-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Code source
+                        </a>
+                        <a href="#projet-details-4" class="project-link demo-link">
+                            <i class="fas fa-robot"></i>
+                            Tester le chatbot
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projet 5 : Dashboard Analytics -->
+            <div class="project-card" data-category="web-app">
+                <div class="project-image">
+                    <img src="assets/images/projets/dashboard.jpg" alt="Dashboard Analytics">
+                    <div class="project-overlay">
+                        <a href="#projet-details-5" class="view-project">
+                            <i class="fas fa-eye"></i>
+                            Voir le projet
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <span class="project-category">Application Web</span>
+                    <h3 class="project-title">Dashboard Analytics Interactif</h3>
+                    <p class="project-description">
+                        Application web de visualisation de données en temps réel avec Streamlit. Intégration de multiples
+                        sources de données et visualisations interactives pour l'analyse business.
+                    </p>
+                    <div class="project-technologies">
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">Plotly</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/votreprofil/projet-dashboard" class="project-link github-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Code source
+                        </a>
+                        <a href="#projet-details-5" class="project-link demo-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Application live
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projet 6 : Détection d'anomalies -->
+            <div class="project-card" data-category="data-science">
+                <div class="project-image">
+                    <img src="assets/images/projets/anomaly-detection.jpg" alt="Détection d'anomalies">
+                    <div class="project-overlay">
+                        <a href="#projet-details-6" class="view-project">
+                            <i class="fas fa-eye"></i>
+                            Voir le projet
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <span class="project-category">Data Science</span>
+                    <h3 class="project-title">Système de Détection d'Anomalies</h3>
+                    <p class="project-description">
+                        Algorithme de détection d'anomalies basé sur Isolation Forest et Autoencoders pour la surveillance
+                        de systèmes industriels. Taux de détection de 95% avec faible faux positif.
+                    </p>
+                    <div class="project-technologies">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Redis</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/votreprofil/projet-anomaly" class="project-link github-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Code source
+                        </a>
+                        <a href="#projet-details-6" class="project-link demo-link">
+                            <i class="fas fa-bell"></i>
+                            Système d'alerte
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bouton Voir plus de projets -->
+        <div class="projects-more">
+            <a href="https://github.com/votreprofil" class="btn-load-more" target="_blank">
+                <i class="fab fa-github"></i>
+                Voir plus sur GitHub
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Section Technologies -->
+<section id="stack-technique" class="tech-stack-section">
+    <div class="tech-stack-container">
+        <h2>🛠️ Stack Technique</h2>
+        <p>Technologies et outils que j'utilise pour développer des solutions IA et Big Data</p>
+        
+        <!-- Catégorie 1 : Langages de programmation -->
+        <div class="tech-category">
+            <h3><i class="fas fa-code"></i> Langages de Programmation</h3>
+            <div class="tech-icons-grid">
+                <div class="tech-icon-card">
+                    <img src="assets/icons/technologies/language/python.svg" alt="Python" title="Python">
+                    <span>Python</span>
+                    <div class="skill-level">Expert</div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                </div>
+                
+                <!--<div class="tech-icon-card">
+                    <img src="assets/icons/technologies/language/java.svg" alt="Java" title="Java">
+                    <span>Java</span>
+                    <div class="skill-level">Avancé</div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                </div>-->
+                
+                <div class="tech-icon-card">
+                    <img src="assets/icons/technologies/language/r.svg" alt="R" title="R">
+                    <span>R</span>
+                    <div class="skill-level">Intermédiaire</div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 65%"></div></div>
+                </div>
+                
+                <div class="tech-icon-card">
+                    <img src="assets/icons/technologies/language/sql.svg" alt="SQL" title="SQL">
+                    <span>SQL</span>
+                    <div class="skill-level">Expert</div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Catégorie 2 : Machine Learning -->
+        <div class="tech-category">
+            <h3><i class="fas fa-brain"></i> Machine Learning & IA</h3>
+            <div class="tech-icons-grid">
+                <div class="tech-icon-card">
+                    <img src="assets/icons/technologies/ML/tensorflow.svg" alt="TensorFlow" title="TensorFlow">
+                    <span>TensorFlow</span>
+                    <div class="skill-level">Avancé</div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                </div>
+                
+                <div class="tech-icon-card">
+                    <img src="assets/icons/technologies/ML/pytorch.svg" alt="PyTorch" title="PyTorch">
+                    <span>PyTorch</span>
+                    <div class="skill-level">Intermédiaire</div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                </div>
+                
+                <div class="tech-icon-card">
+                    <img src="assets/icons/technologies/ML/scikit-learn.svg" alt="Scikit-Learn" title="Scikit-Learn">
+                    <span>Scikit-Learn</span>
+                    <div class="skill-level">Expert</div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                </div>
+                
+                <div class="tech-icon-card">
+                    <img src="assets/icons/technologies/ML/pandas.svg" alt="Pandas" title="Pandas">
+                    <span>Pandas</span>
+                    <div class="skill-level">Expert</div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Catégorie 3 : Big Data -->
+        <div class="tech-category">
+            <h3><i class="fas fa-database"></i> Big Data</h3>
+            <div class="tech-icons-grid">
+                <div class="tech-icon-card">
+                    <img src="assets/icons/technologies/Big_Data/spark.svg" alt="Apache Spark" title="Apache Spark">
+                    <span>Apache Spark</span>
+                    <div class="skill-level">Avancé</div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                </div>
+                
+                <div class="tech-icon-card">
+                    <img src="assets/icons/technologies/Big_Data/hadoop.svg" alt="Hadoop" title="Hadoop">
+                    <span>Hadoop</span>
+                    <div class="skill-level">Intermédiaire</div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                </div>
+                
+                <div class="tech-icon-card">
+                    <img src="assets/icons/technologies/Big_Data/kafka.svg" alt="Kafka" title="Kafka">
+                    <span>Apache Kafka</span>
+                    <div class="skill-level">Intermédiaire</div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 65%"></div></div>
+                </div>
+                
+                <div class="tech-icon-card">
+                    <img src="assets/icons/technologies/language/python.svg" alt="PySpark" title="PySpark">
+                    <span>PySpark</span>
+                    <div class="skill-level">Avancé</div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Catégorie 4 : Bases de données -->
+        <div class="tech-category">
+            <h3><i class="fas fa-server"></i> Bases de Données</h3>
+            <div class="tech-icons-grid">
+                <div class="tech-icon-card">
+                    <img src="assets/icons/technologies/base_de_donnees/mongodb.svg" alt="MongoDB" title="MongoDB">
+                    <span>MongoDB</span>
+                    <div class="skill-level">Avancé</div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                </div>
+                
+                <div class="tech-icon-card">
+                    <img src="assets/icons/technologies/base_de_donnees/postgresql.svg" alt="PostgreSQL" title="PostgreSQL">
+                    <span>PostgreSQL</span>
+                    <div class="skill-level">Avancé</div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                </div>
+                
+                <div class="tech-icon-card">
+                    <img src="assets/icons/technologies/base_de_donnees/mysql.svg" alt="MySQL" title="MySQL">
+                    <span>MySQL</span>
+                    <div class="skill-level">Expert</div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                </div>
+                
+                <!--<div class="tech-icon-card">
+                    <img src="assets/icons/technologies/Big_Data/hadoop.svg" alt="HBase" title="HBase">
+                    <span>HBase</span>
+                    <div class="skill-level">Intermédiaire</div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 60%"></div></div>
+                </div>-->
+            </div>
+        </div>
+        
+        <!-- Catégorie 5 : Cloud & Outils -->
+        <div class="tech-category">
+            <h3><i class="fas fa-cloud"></i> Cloud & Outils</h3>
+            <div class="tech-icons-grid">
+                <div class="tech-icon-card">
+                    <img src="assets/icons/social/github.svg" alt="GitHub" title="GitHub">
+                    <span>GitHub</span>
+                    <div class="skill-level">Expert</div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                </div>
+                
+                <div class="tech-icon-card">
+                    <img src="assets/icons/technologies/ML/docker.svg" alt="Docker" title="Docker">
+                    <span>Docker</span>
+                    <div class="skill-level">Avancé</div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                </div>
+                
+                <!--<div class="tech-icon-card">
+                    <img src="assets/icons/technologies/aws.svg" alt="AWS" title="AWS">
+                    <span>AWS</span>
+                    <div class="skill-level">Intermédiaire</div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                </div>
+                
+                <div class="tech-icon-card">
+                    <img src="assets/icons/technologies/tableau.svg" alt="Tableau" title="Tableau">
+                    <span>Tableau</span>
+                    <div class="skill-level">Avancé</div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Section Contact -->
+<section id="contact" class="contact-section">
+    <div class="contact-container">
+        <!-- En-tête -->
+        <div class="contact-header">
+            <h2>Contactez-moi</h2>
+            <p>Discutons de collaborations, projets ou opportunités en IA & Big Data</p>
+        </div>
+        
+        <!-- Contenu principal -->
+        <div class="contact-content">
+            <!-- Formulaire de contact -->
+            <div class="contact-form-container">
+                <form class="contact-form" id="contactForm">
+                    <h3><i class="fas fa-paper-plane"></i> Envoyez un message</h3>
+                    
+                    <div class="form-group">
+                        <label for="name">Votre nom *</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Votre nom complet" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Votre email *</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="votre@email.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Sujet *</label>
+                        <input type="text" id="subject" name="subject" class="form-control" placeholder="Objet de votre message" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Votre message *</label>
+                        <textarea id="message" name="message" class="form-control" placeholder="Décrivez votre projet ou demande..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i>
+                        Envoyer le message
+                    </button>
+                </form>
+                <!-- Après votre formulaire, ajoutez ces scripts pour EmailJS -->
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+                <script type="text/javascript">
+                     // Initialisation d'EmailJS (remplacez avec votre User ID)
+                    (function() {
+                         emailjs.init("YOUR_PUBLIC_KEY"); // Obtenez-le sur https://www.emailjs.com
+                    })();
+    
+                    // Fonction d'envoi avec EmailJS
+                    function sendEmail(formData) {
+                        const templateParams = {
+                        from_name: formData.name,
+                        from_email: formData.email,
+                        subject: formData.subject,
+                        message: formData.message
+                    };
+        
+                    return emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams);
+                    }
+                </script>
+            </div>
+            
+            <!-- Informations de contact -->
+            <div class="contact-info">
+                <!-- Méthodes de contact -->
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="method-content">
+                            <h4>Email</h4>
+                            <p>
+                                <a href="mailto:votre.email@etudiant.com">geutuiloic@gmail.com</a>
+                            </p>
+                           <!--<p style="font-size: 0.9rem; margin-top: 5px;">Réponse sous 24h</p>--> 
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="method-content">
+                            <h4>Téléphone</h4>
+                            <p>
+                                <a href="tel:+33612345678">+237 657451939</a>
+                            </p>
+                            <p style="font-size: 0.9rem; margin-top: 5px;">Disponible</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="method-content">
+                            <h4>Localisation</h4>
+                            <p>DOUALA-Yassa</p>
+                            <p style="font-size: 0.9rem; margin-top: 5px;">Ouvert au remote & hybrid</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Réseaux sociaux -->
+                <div class="social-networks">
+                    <h3><i class="fas fa-share-alt"></i> Réseaux professionnels</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/votreprofil" class="social-link github" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        
+                        <a href="https://linkedin.com/in/votreprofil" class="social-link linkedin" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        
+                        <a href="mailto:votre.email@etudiant.com" class="social-link email">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                        
+                        <a href="https://kaggle.com/votreprofil" class="social-link kaggle" target="_blank" rel="noopener">
+                            <i class="fab fa-kaggle"></i>
+                            <span>Kaggle</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Carte de visite -->
+                <div class="contact-card">
+                    <h3><i class="fas fa-user-graduate"></i> Disponibilités</h3>
+                    <p>
+                        Actuellement à la recherche d'un stage de fin d'études ou d'une alternance 
+                        en Data Science / Machine Learning.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Footer Professionnel -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Grille principale -->
+        <div class="footer-grid">
+            <!-- Section À propos -->
+            <div class="footer-about">
+                <h3>GEUTUI TCHEUTOU SAINT LOIC</h3>
+                <p>
+                    Étudiant passionné en Master 2 IA & Big Data, spécialisé dans le Machine Learning, 
+                    la Data Science et le développement de solutions Big Data innovantes.
+                </p>
+                <div class="footer-social">
+                    <a href="https://github.com/votreprofil" class="social-icon" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/votreprofil" class="social-icon" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://kaggle.com/votreprofil" class="social-icon" target="_blank" title="Kaggle">
+                        <i class="fab fa-kaggle"></i>
+                    </a>
+                    <a href="mailto:votre.email@etudiant.com" class="social-icon" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Liens rapides -->
+            <div class="footer-links">
+                <h3>Liens Rapides</h3>
+                <ul class="links-list">
+                    <li>
+                        <a href="#accueil">
+                            <i class="fas fa-chevron-right"></i>
+                            Accueil
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#parcours">
+                            <i class="fas fa-chevron-right"></i>
+                            Parcours
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projets">
+                            <i class="fas fa-chevron-right"></i>
+                            Projets
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#competences">
+                            <i class="fas fa-chevron-right"></i>
+                            Compétences
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <i class="fas fa-chevron-right"></i>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Contact -->
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <ul class="contact-list">
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-text">
+                            <strong>Email</strong><br>
+                            <a href="mailto:votre.email@etudiant.com">votre.email@etudiant.com</a>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-text">
+                            <strong>Téléphone</strong><br>
+                            <a href="tel:+33612345678">+33 6 12 34 56 78</a>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-text">
+                            <strong>Localisation</strong><br>
+                            Paris, France<br>
+                            <small>Disponible pour remote & hybrid</small>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Newsletter (Optionnel) -->
+            <div class="footer-newsletter">
+                <h3>Restons Connectés</h3>
+                <p class="newsletter-text">
+                    Recevez des mises à jour sur mes nouveaux projets et articles techniques en IA & Big Data.
+                </p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" class="newsletter-input" placeholder="Votre email" required>
+                    <button type="submit" class="newsletter-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        S'abonner
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Bas du footer -->
+        <div class="footer-bottom">
+            <div class="copyright">
+                &copy; 2024 <strong>GEUTUI TCHEUTOU SAINT LOIC</strong>. Tous droits réservés.
+                <br>
+            </div>
+            
+            <div class="footer-legal">
+                <a href="assets/pdf/cv-votre-nom.pdf" download>Mon CV</a>
+                <a href="assets/pdf/memoire-synthese.pdf" download>Mémoire</a>
+                <a href="#contact">Mentions légales</a>
+                <a href="#contact">Politique de confidentialité</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bouton Back to Top -->
+<a href="#accueil" class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
